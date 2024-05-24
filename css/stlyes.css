@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mountains of Christmas", serif;
+}
+header {
+  background: #de8f5f;
+  height: 30vh;
+  background-image: url("../assets/header.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+}
+main {
+  background-image: url(../assets/background.jpeg);
+  padding: 2rem;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.card {
+  color: antiquewhite;
+  width: 25vw;
+  height: 30vh;
+  position: relative;
+}
+
+.card_back {
+  background-color: #a3b763;
+  color: black;
+  font-size: 1.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card_front {
+  background-color: #db1940;
+  cursor: pointer;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+.card_content {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: all 1s ease;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2%;
+  text-align: center;
+  box-shadow: #94949488 5px 2px 15px;
+}
+.card_header {
+  height: 50%;
+  width: 100%;
+  background-color: black;
+}
+.card_header iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.card_body {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+.is-flipped {
+  transform: rotateY(180deg);
+  visibility: hidden;
+}
+.btn {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  max-width: 550px;
+  padding: 1rem;
+  font-size: 2rem;
+  margin: 5rem auto;
+  background-color: #a3b763;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.btn:hover {
+  background-color: #c8d699;
+}
+.btn:active {
+  transform: scale(0.96);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  background-color: yellowgreen;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  color: black;
+}
